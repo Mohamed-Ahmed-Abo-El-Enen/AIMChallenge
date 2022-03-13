@@ -1,0 +1,13 @@
+<center>
+    <form method="POST">
+        <label>Arabic Tweet Text</label>
+        <input name="text" value={{text_val}}>
+        <input type="submit" value="Find Dialect">
+        <p>
+            <input type="radio" name="classifier_type" id="sgd_clf" value="SGD"> SGD_Clf </input><br>
+            <input type="radio" name="classifier_type" id="svm_clf" value="SVM"> SVM_Clf </input><br>
+            <input type="radio" name="classifier_type" id="lstm" value="LSTM"> LSTM_Attention_Clf </input><br>
+        </p>
+    </form>
+    <h3>Dialect Class: {{res}}<h3>
+</center>
